@@ -1,4 +1,4 @@
-package CriticalSections;
+package Chapter2.CriticalSections;
 
 public class TestCriticalSections {
   public static void  main(String[] arg) throws InterruptedException {

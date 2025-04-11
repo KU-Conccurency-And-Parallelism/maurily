@@ -1,4 +1,4 @@
-package CriticalSections;
+package Chapter2.CriticalSections;
 
 public class Counter {
 
