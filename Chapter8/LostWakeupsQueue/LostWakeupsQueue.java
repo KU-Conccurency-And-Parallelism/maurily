@@ -1,8 +1,8 @@
-package Chapter8.LockedQueue;
+package Chapter8.LostWakeupsQueue;
 
 import java.util.concurrent.locks.*;
 
-public class LockedQueue<T> {
+public class LostWakeupsQueue<T> {
     final Lock lock = new ReentrantLock();
     final Condition notFull = lock.newCondition();
     final Condition notEmpty = lock.newCondition();
@@ -10,7 +10,7 @@ public class LockedQueue<T> {
     int tail, head, count;
 
     @SuppressWarnings("unchecked")
-    public LockedQueue(int capacity) {
+    public LostWakeupsQueue(int capacity) {
         items = (T[]) new Object[capacity];
     }
 

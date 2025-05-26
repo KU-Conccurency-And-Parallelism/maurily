@@ -1,9 +1,9 @@
-package Chapter8.LockedQueue;
+package Chapter8.LostWakeupsQueue;
 
 public class TestLostWakeups {
   public static void main(String[] args) throws InterruptedException {
 
-    LockedQueue<Integer> queue = new LockedQueue<>(5);
+    LostWakeupsQueue<Integer> queue = new LostWakeupsQueue<>(5);
 
     Runnable consumer = () -> {
       try {
