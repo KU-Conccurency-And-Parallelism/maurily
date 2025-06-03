@@ -5,7 +5,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class CoarseList<T> {
     private Node<T> head;
-    private Lock lock = new ReentrantLock();
+    protected Lock lock = new ReentrantLock();
     
     public CoarseList() {
         head = new Node<T>(Integer.MIN_VALUE);
